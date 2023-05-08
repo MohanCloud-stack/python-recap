@@ -1,14 +1,18 @@
-class Dog():
-    #it is not connected to any self so
-    # it is a class object Attribute
-    species="mamal"
-    def __init__(self,breed,name,spot):
-        self.breed=breed
-        self.name=name
-        self.spot=spot
-    # Operations/ actions
-    def bark(self,number):
-        print("WOOF! My name is {} and number is {}".format(self.name,number))
-
-m1=Dog(breed="lab",name="jimmy",spot=True)
-m1.bark(32)
+class Animal():
+    def __init__(self):
+        print("Animal Created")
+    def eat(self):
+        print("I am eating")
+    def whoami(self):
+        print("I am an Animal")
+class Dog(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+        print("this is Dog")
+    def eat(self):
+        print("I am Dog and I am eating")
+    def whoami(self):
+        print("I am Dog")
+d1=Dog()
+d1.eat()
+d1.whoami()
