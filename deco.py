@@ -1,6 +1,6 @@
-def cool():
-    def super_cool():
-        return "I am very cool"
-    return super_cool
-some_func=cool()
-print(some_func())
+def hello():
+    return "Hello John doe"
+def other(somefunc):
+    print("Other functions!!!")
+    print(somefunc())
+other(hello)
