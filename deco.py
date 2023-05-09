@@ -8,3 +8,4 @@ def new_decorator(original_func):
 def func_needs_decorator():
     print("I want to be decorated!!!")
 func_needs_decorator()
+#func_needs_decorator=new_decorator(func_needs_decorator)
